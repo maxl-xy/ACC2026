@@ -13,9 +13,7 @@ sys.path.append('systems')
 sys.path.append('configs')
 sys.path.append('models')
 
-# Configuration variables
-task = 'MUAV_point_mass'  # Name of the model
-use_cuda = True  # Set to False to disable CUDA
+# Hyperparameters
 bs = 256  # Batch size
 num_train = 256*64  # Number of samples for training
 num_test = 256*16  # Number of samples for testing
@@ -25,7 +23,11 @@ lr_step = 5  # Learning rate step
 _lambda = 0.5  # Convergence rate: lambda
 w_ub = 10  # Upper bound of the eigenvalue of the dual metric
 w_lb = 0.1  # Lower bound of the eigenvalue of the dual metric
+
+# Configuration variables
+task = 'MUAV_point_mass'  # Name of the model
 log = 'log_test'  # Path to a directory for storing the training log
+use_cuda = True  # Set to False to disable CUDA
 
 np.random.seed(1024)
 

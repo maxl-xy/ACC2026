@@ -18,18 +18,20 @@ MEDIUM_SIZE = 10
 BIGGER_SIZE = 13
 HUGE_SIZE = 25
 
-# Configuration variables (previously command line arguments)
-task = 'MUAV_point_mass'
-pretrained = 'log_MUAV_point_mass_constrained'  # You'll need to set this to the path of your pretrained model
+# Simulation variables
 trajectory_type = 'circular'  # 'hover', 'circular', 'figure-8'
 plot_type = '3D'  # '2D', '3D', 'time', 'error', 'control'
 plot_dims = [0, 1, 2]  # For '2D', '3D', 'time' and 'error' plot types, specify which state dimensions to plot
 nTraj = 3  # Number of trajectories to simulate and plot
-seed = 0  # Random seed for reproducibility
 disturbance_switch=True  # Add constant disturbance together with Gaussian forces to the payload and quadrotors
 sigma = 0.3  # Standard deviation of Gaussian noise added; 0.3 is set for figure 8 in our paper
 UDE_switch=True  # Enable UDE
 attitude_tracking_switch=True  # Enable attitude tracking controller and dynamics of quadrotors
+seed = 0  # Random seed for reproducibility
+
+# Configuration variables
+task = 'MUAV_point_mass'
+pretrained = 'log_MUAV_point_mass_constrained'  # You'll need to set this to the path of your pretrained model
 save_plot_path = os.path.join('results/plots', trajectory_type)  # Path to save the plot image, e.g., 'results/plots/3D_path.png'; to show the plot instead, set to None
 save_csv_path = os.path.join('results/csvs', trajectory_type)  # Path to save the csv files; disable with None
 
@@ -190,3 +192,7 @@ if __name__ == '__main__':
             ude_i = np.concatenate((t_arr, np.squeeze(delta_j_bot_errs_arr[i].T), delta_T_errs_arr[i].reshape(-1, 1)), axis = 1)
             np.savetxt(save_csv_path + f'/ude_{i+1}.csv', ude_i, delimiter=',')
             print(f"Saved {save_csv_path}/ude_{i+1}.csv")
+    
+    # sim_i columns: time, x_closed, x_att_closed, xstar
+    # con_i columns: time, controls_C3M, controls, ustar
+    # ude_i columns: time, delta_j_bot_errs, delta_T_errs
