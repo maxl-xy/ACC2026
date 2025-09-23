@@ -81,7 +81,7 @@ Then, run ```quadrotorPayload.m``` in MATLAB. A 3D plot with drone figures will 
 To get plots for figure-8 trajectory, change _cir to _ate in the four lines shown in the figure below:  
 <img src="AnimationModels-main/figures/quad_struct.png" alt="Use specified struct variable" width="530"/>
 
-To visualize simulation of your own, the CSV files generated in [results/csvs](results/csvs) need to be stored in [AnimationModels/examples/quadrotor_slung_payload_model](AnimationModels/examples/quadrotor_slung_payload_model). 
+To visualize simulation of your own, the CSV files generated in [results/csvs](results/csvs) need to be stored in [AnimationModels-main/examples/quadrotor_slung_payload_model](AnimationModels-main/examples/quadrotor_slung_payload_model). 
 
 Then, save the CSV files of one trajectory as .mat files by running ```save_files.m```. 
 Change the struct variable name and the name of .mat files in the save_files.m according to the figure below:
