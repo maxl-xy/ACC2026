@@ -1,4 +1,4 @@
-# Neural Robust Control for Multi-drone Slung Payload Manipulation with Control Contraction Metrics
+# A Robust Neural Control Design for Multi-drone Slung Payload Manipulation with Control Contraction Metrics
 Pytorch and Matlab implementation of the ACC2026 paper "Neural Robust Control for Multi-drone Slung Payload Manipulation with Control Contraction Metrics", by Xinyuan Liang, Longhao Qian, Yi Lok Lo and Hugh H.T. Liu
 
 ## Acknowledgement
