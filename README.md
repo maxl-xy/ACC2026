@@ -75,18 +75,22 @@ This runs a closed-loop simulation with the learned feedback controller stored i
 ## Matlab visualisation and plots
 To visualize the trajectories and create plots used in our paper, the [Matlab Flight Simulation Animation Package](https://github.com/LonghaoQian/AnimationModels/tree/main) developed by Dr Longhao Qian is utilised. 
 
-First, store the CSV files in [AnimationModels/examples/quadrotor_slung_payload_model](AnimationModels/examples/quadrotor_slung_payload_model). 
+Open examples/quadrotor_slung_payload_model/quadrotorPayload.m. 
+Then, run ```quadrotorPayload.m``` in MATLAB. A 3D plot with drone figures will be shown in Figure 1. The UDE performance plot will be shown in Figure 2.
+
+To get plots for figure-8 trajectory, change _cir to _ate in the four lines shown in the figure below:  
+<img src="AnimationModels-main/figures/quad_struct.png" alt="Use specified struct variable" width="530"/>
+
+To visualize simulation of your own, the CSV files generated in [results/csvs](results/csvs) need to be stored in [AnimationModels/examples/quadrotor_slung_payload_model](AnimationModels/examples/quadrotor_slung_payload_model). 
 
 Then, save the CSV files of one trajectory as .mat files by running ```save_files.m```. 
-Change struct variable name and name of .mat files in the save_files.m according to the figure below:
+Change the struct variable name and the name of .mat files in the save_files.m according to the figure below:
 ![How to save struct variable](AnimationModels-main/figures/save_file.png)
 
-
-Open examples/quadrotor_slung_payload_model/quadrotorPayload.m
-Retrieve corresponding struct variable from the .mat file in quadrotorpayload.m according to the image below:
+Open examples/quadrotor_slung_payload_model/quadrotorPayload.m and set the corresponding struct variable from the .mat file in quadrotorpayload.m according to the image below:
 
 <img src="AnimationModels-main/figures/quad_struct.png" alt="Use specified struct variable" width="530"/>
 
-Finally, run ```quadrotorPayload.m```. A 3D plot with drone figures will be shown in Figure 1. The UDE performance plot will be shown in Figure 2.
+Finally, run ```quadrotorPayload.m```.
 
 For further instruction on other visualisations, please refer to the [README file in the visualization package](AnimationModels-main/README.md).
