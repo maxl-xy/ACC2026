@@ -84,6 +84,7 @@ Change struct variable name and name of .mat files in the save_files.m according
 
 Open examples/quadrotor_slung_payload_model/quadrotorPayload.m
 Retrieve corresponding struct variable from the .mat file in quadrotorpayload.m according to the image below:
+
 <img src="AnimationModels-main/figures/quad_struct.png" alt="Use specified struct variable" width="530"/>
 
 Finally, run ```quadrotorPayload.m```. A 3D plot with drone figures will be shown in Figure 1. The UDE performance plot will be shown in Figure 2
