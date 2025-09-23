@@ -87,6 +87,6 @@ Retrieve corresponding struct variable from the .mat file in quadrotorpayload.m 
 
 <img src="AnimationModels-main/figures/quad_struct.png" alt="Use specified struct variable" width="530"/>
 
-Finally, run ```quadrotorPayload.m```. A 3D plot with drone figures will be shown in Figure 1. The UDE performance plot will be shown in Figure 2
+Finally, run ```quadrotorPayload.m```. A 3D plot with drone figures will be shown in Figure 1. The UDE performance plot will be shown in Figure 2.
 
 For further instruction on other visualisations, please refer to the [README file in the visualization package](AnimationModels-main/README.md).
