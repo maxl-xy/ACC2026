@@ -72,8 +72,8 @@ Change struct varaible name and ... in
 ![How to save struct variable](AnimationModels-main/figures/save_file.png)
 
 
-Set struct variable in quadrotor.m
-![Use specified struct variable](AnimationModels-main/figures/quad_struct.png)
+Set struct variable in quadrotor.m  
+<img src="AnimationModels-main/figures/quad_struct.png" alt="Use specified struct variable" width="530"/>
 
 run quadrotorPayload.m to plot
 
