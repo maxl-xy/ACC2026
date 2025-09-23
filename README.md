@@ -13,11 +13,11 @@ Dependencies include ```torch```, ```tqdm```, ```numpy```, and ```matplotlib```.
 pip install -r requirements.txt
 ```
 
-## Usage
+## Dual training of CCM and controller
 The script ```main.py``` can be used for learning the controller. U
 
 Optional arguments:
-```
+
   --bs BS               Batch size.
   --num_train NUM_TRAIN
                         Number of samples for training.
@@ -29,25 +29,52 @@ Optional arguments:
   --w_ub W_UB           Upper bound of the eigenvalue of the dual metric.
   --w_lb W_LB           Lower bound of the eigenvalue of the dual metric.
   --log LOG             Path to a directory for storing the log.
-```
+
 
 Run the following command to learn a controller for the 3 drone slung payload system.
 ```
 python3 main.py
 ```
 
+## Simulation of closed-loop system
 Run the following command to evaluate the learned controller and plot the results.
 ```
 python3 plot.py
 ```
+
+Things to change:
+trajectory type
+plot type
+plot dimensions
+number of trajectories
+Disturbance switch
+sigma
+UDE switch
+attitude tracker switch
+
 It produces plots and csv files...
+plots in results/plots...
+csv in results/csvs...
+con_i.csv, sim_i.csv, ude_i.csv
+i being the i^th simulated trajectory
 
-
-## Matlab visualization
+## Matlab visualization and plots
 ...
-Simulation package
-save csv files as .mat
-plot 3D plots with drone figures in ...
-plot UDE performance in ...
+Simulation package 
+cite longhao
 
-cite longhao...
+Open examples/quadrotor slung payload model/quadrotorPayload.m
+
+
+save csv files as .mat using save_files.m
+Change struct varaible name and ... in
+(photo) 
+
+Set struct variable in quadrotor.m
+(photo)
+run quadrotorPayload.m to plot
+
+3D plot with drone figures in figure(1)
+UDE performance plot in figure(2)
+
+For further instruction on other visualization, refer to ...
