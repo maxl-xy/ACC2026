@@ -68,10 +68,13 @@ Open examples/quadrotor slung payload model/quadrotorPayload.m
 
 save csv files as .mat using save_files.m
 Change struct varaible name and ... in
-(photo) 
+
+![How to save struct variable](AnimationModels-main/figures/save_file.png)
+
 
 Set struct variable in quadrotor.m
-(photo)
+![Use specified struct variable](AnimationModels-main/figures/quad_struct.png)
+
 run quadrotorPayload.m to plot
 
 3D plot with drone figures in figure(1)
