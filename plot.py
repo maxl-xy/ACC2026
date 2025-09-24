@@ -23,10 +23,10 @@ trajectory_type = 'circular'  # 'hover', 'circular', 'figure-8'
 plot_type = '3D'  # '2D', '3D', 'time', 'error', 'control'
 plot_dims = [0, 1, 2]  # For '2D', '3D', 'time' and 'error' plot types, specify which state dimensions to plot
 nTraj = 3  # Number of trajectories to simulate and plot
-disturbance_switch=True  # Add constant disturbance together with Gaussian forces to the payload and quadrotors
+disturbance_switch = True  # Add constant disturbance together with Gaussian forces to the payload and quadrotors
 sigma = 0.3  # Standard deviation of Gaussian noise added; 0.3 is set for figure 8 in our paper
-UDE_switch=True  # Enable UDE
-attitude_tracking_switch=True  # Enable attitude tracking controller and dynamics of quadrotors
+UDE_switch = True  # Enable UDE
+attitude_tracking_switch = True  # Enable attitude tracking controller and dynamics of quadrotors
 seed = 0  # Random seed for reproducibility
 
 # Configuration variables
