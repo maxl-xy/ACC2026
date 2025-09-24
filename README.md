@@ -78,7 +78,7 @@ To visualize the trajectories and create plots used in our paper, the [Matlab Fl
 Open examples/quadrotor_slung_payload_model/quadrotorPayload.m. 
 Then, run ```quadrotorPayload.m``` in MATLAB. A 3D plot with drone figures will be shown in Figure 1. The UDE performance plot will be shown in Figure 2.
 
-To get plots for figure-8 trajectory, change _cir to _ate in the four lines shown in the figure below:  
+To get plots for circular or figure-8 trajectories in our supplementary documents, change the struct variable name to multiquadPayloadData_cir or multiquadPayloadData_ate respectively in the four lines shown in the figure below:  
 <img src="AnimationModels-main/figures/quad_struct.png" alt="Use specified struct variable" width="530"/>
 
 To visualize simulation of your own, the CSV files generated in [results/csvs](results/csvs) need to be stored in [AnimationModels-main/examples/quadrotor_slung_payload_model](AnimationModels-main/examples/quadrotor_slung_payload_model). 
