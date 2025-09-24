@@ -5,7 +5,7 @@ Pytorch and Matlab implementation of the ACC2026 paper "Neural Robust Control fo
 The codes are developed based on the CoRL'20 paper "[Learning Certified Control Using Contraction Metric](https://arxiv.org/abs/2011.12569)", by Dawei Sun, Susmit Jha, and Chuchu Fan.
 
 ## Supplementary documents
-The derivation of our system dynamics can be found [in this document]().
+The derivation of our system dynamics can be found [in this document](Supporting_Document).
 
 ## Requirements
 Dependencies include ```torch```, ```tqdm```, ```numpy```, and ```matplotlib```. You can install them using the following command.
@@ -75,8 +75,7 @@ This runs a closed-loop simulation with the learned feedback controller stored i
 ## Matlab visualisation and plots
 To visualize the trajectories and create plots used in our paper, the [Matlab Flight Simulation Animation Package](https://github.com/LonghaoQian/AnimationModels/tree/main) developed by Dr Longhao Qian is utilised. 
 
-Open examples/quadrotor_slung_payload_model/quadrotorPayload.m. 
-Then, run ```quadrotorPayload.m``` in MATLAB. A 3D plot with drone figures will be shown in Figure 1. The UDE performance plot will be shown in Figure 2.
+Open examples/quadrotor_slung_payload_model/quadrotorPayload.m and run ```quadrotorPayload.m``` in MATLAB. A 3D plot with drone figures will be shown in Figure 1. The UDE performance plot will be shown in Figure 2.
 
 To get plots for circular or figure-8 trajectories in our supplementary documents, change the struct variable name to multiquadPayloadData_cir or multiquadPayloadData_ate respectively in the four lines shown in the figure below:  
 <img src="AnimationModels-main/figures/quad_struct.png" alt="Use specified struct variable" width="530"/>
