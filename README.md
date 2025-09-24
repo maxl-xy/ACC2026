@@ -5,7 +5,7 @@ Pytorch and Matlab implementation of the ACC2026 paper "Neural Robust Control fo
 The codes are developed based on the CoRL'20 paper "[Learning Certified Control Using Contraction Metric](https://arxiv.org/abs/2011.12569)", by Dawei Sun, Susmit Jha, and Chuchu Fan.
 
 ## Supplementary documents
-The derivation of our system dynamics can be found [in this document](Supporting_Document).
+The derivation of our system dynamics can be found [in this document](Supporting_Document.pdf).
 
 ## Requirements
 Dependencies include ```torch```, ```tqdm```, ```numpy```, and ```matplotlib```. You can install them using the following command.
