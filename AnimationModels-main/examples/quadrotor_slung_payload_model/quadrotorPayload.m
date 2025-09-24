@@ -26,10 +26,10 @@ close all
 clear;
 %% load the simulation data
 % _cir for circular path; _ate for figure-8 path 
-load("multiquadPayloadData_cir.mat");
-multiquadPayloadData = multiquadPayloadData_cir;
-load("multiquadPayloadData_cir_xUDE.mat")
-multiquadPayloadData_xUDE = multiquadPayloadData_cir_xUDE;
+load("final.mat");
+multiquadPayloadData = final;
+load("final_xUDE.mat")
+multiquadPayloadData_xUDE = final_xUDE;
 addpath('../../src/models')
 addpath('../../src/utils')
 addpath('../../src/camera')
@@ -133,7 +133,7 @@ for i = 1:itr:itr*5 % 1:length(idxArray)
         'ZData', [multiquadPayloadData.X3(k, 3)  multiquadPayloadData.PX(k, 3)]);
     %% update the camera
     % UpdateCameraModelSideView(ax, [0.5, 0.2, 0], [3, 2.5, 1], 3) % Circular
-    UpdateCameraModelSideView(ax, [0.5, 0.2, 0], [4, 2.5, 1], 3) % Figure 8
+    UpdateCameraModelSideView(ax, [0.5, 0.2, 0.1], [4, 2.5, 1], 3) % Figure 8
     % UpdateCameraModelSideView(ax, x_1 + [0, 0, 0.8], [1.5, 1.5, 1.8], 3)
     %% update the title
     %set(t1, 'String', ['t=', num2str(multiquadPayloadData.time(k), '%.2f') ,'s']);

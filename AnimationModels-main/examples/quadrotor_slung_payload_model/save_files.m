@@ -113,8 +113,8 @@ multiquadPayloadData.DBE3 = delta_bot_err_3;
 multiquadPayloadData.DTE = delta_T_err;
 
 % Save the data as a .mat file
-multiquadPayloadData_ate_xUDE = multiquadPayloadData; % Change name of struct variable
-save("multiquadPayloadData_ate_xUDE.mat", 'multiquadPayloadData_ate_xUDE'); % Save struct variable into .mat file 
+final_xUDE = multiquadPayloadData; % Change name of struct variable
+save("final_xUDE.mat", 'final_xUDE'); % Save struct variable into .mat file 
 
 
 %% Quaternion to rotation matrix function
